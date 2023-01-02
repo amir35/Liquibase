@@ -1,0 +1,1 @@
+liquibase --changeLogFile=liquibase-changelogs.xml rollbackTime 2022-12-26T5:46:18

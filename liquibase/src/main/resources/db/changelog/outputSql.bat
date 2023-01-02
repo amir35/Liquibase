@@ -1,0 +1,1 @@
+liquibase --changeLogFile=liquibase-changelogs.xml --outputFile=outputUpdate.sql update-sql
