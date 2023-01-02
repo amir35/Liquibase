@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+
+   <!-- <changeSet id="07" author="aamir">
+        <createTable tableName="books"
+                     remarks="A table to contain all booking">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="author" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <rollback>
+            drop table books
+        </rollback>
+    </changeSet>-->
+
+    <include file="/insert.xml" />
+
+    <!--<changeSet id="04" author="ahmad">
+        <comment>Inserting Authors</comment>
+        <insert tableName="authors">
+            <column name="id" valueNumeric="91"/>
+            <column name="name" value="author_091"/>
+        </insert>
+        <insert tableName="authors">
+            <column name="id" valueNumeric="81"/>
+            <column name="name" value="author_081"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="99" author="xyz">
+        <addColumn tableName="authors">
+            <column name="addresss" type="varchar(255)"></column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="98" author="xya">
+        <addColumn tableName="authors">
+            <column name="phone" type="varchar(255)"></column>
+        </addColumn>
+    </changeSet>-->
+</databaseChangeLog>

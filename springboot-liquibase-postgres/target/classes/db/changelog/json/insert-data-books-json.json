@@ -1,0 +1,31 @@
+{
+        "databaseChangeLog": [
+        {
+                "changeSet": {
+                        "id": "1",
+                        "author": "Liquibase",
+                        "changes": [
+                        {
+                                "createTable": {
+                                "columns": [
+                                {
+                                        "column":
+                                        {
+                                                "name": "id",
+                                                "type": "INT",
+                                                "constraints":
+                                                {
+                                                        "primaryKey": true,
+                                                        "nullable": false
+                                                },
+                                                "name": "name",
+                                                "type": "VARCHAR2"
+                                        }
+                                }]
+                        ,
+                        "tableName": "test_table"
+                         }
+                }]
+        }
+        }]
+}

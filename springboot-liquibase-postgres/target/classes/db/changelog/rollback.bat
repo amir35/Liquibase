@@ -1,0 +1,1 @@
+liquibase --driver=oracle.jdbc.driver.OracleDriver --url=jdbc:oracle:thin:@localhost:1521:orcl --changeLogFile=liquibase-changelogs.xml --username=system --password=root12345 rollbackCount 1
