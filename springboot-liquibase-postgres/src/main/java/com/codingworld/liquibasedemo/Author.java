@@ -14,7 +14,6 @@ import javax.persistence.UniqueConstraint;
 @Entity
 @Table(name = "authors1")
 public class Author implements Serializable {
-
   @Id
   @Column(name = "id", nullable = false, unique = true)
   @GeneratedValue(strategy = GenerationType.AUTO)
